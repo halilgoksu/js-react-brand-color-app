@@ -43,8 +43,7 @@ function Download() {
 						})
 					})
 					break;
-				default :
-				
+				defa
 
 			}
 

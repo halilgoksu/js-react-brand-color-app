@@ -44,7 +44,6 @@ function Download() {
 					})
 					break;
 				default :
-				
 
 			}
 

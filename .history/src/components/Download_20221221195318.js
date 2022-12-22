@@ -43,8 +43,6 @@ function Download() {
 						})
 					})
 					break;
-				default :
-				
 
 			}
 

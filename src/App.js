@@ -6,7 +6,7 @@ import {useEffect, useState} from 'react';
 import Copied from './components/Copied';
 import {
 	BrowserRouter as Router,
-	Switch,
+	Routes,
 	Route
 } from "react-router-dom";
 import Collection from './components/Collection';
@@ -55,14 +55,10 @@ function App() {
 				{copied && <Copied color={copied}/>}
 				<Sidebar />
 				<Router>
-					<Switch>
-						<Route path="/" exact>
-							<Content />
-						</Route>
-						<Route path="/collection/:slugs">
-							<Collection />
-						</Route>
-					</Switch>
+					<Routes>
+						<Route path="/"  element={ <Content />}></Route>
+						<Route path="/collection/:slugs"  element={ <Collection />}></Route>
+					</Routes>
 				</Router>
 			</MainContext.Provider>
 		</>

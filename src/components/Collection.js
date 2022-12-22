@@ -1,5 +1,5 @@
 import {useContext, useEffect, useState} from 'react'
-import {useParams, Link, useHistory} from 'react-router-dom'
+import {useParams, Link, useNavigate} from 'react-router-dom'
 import {GrLinkPrevious} from 'react-icons/gr';
 import Search from './Search';
 import Download from './Download';
@@ -10,7 +10,7 @@ import Loader from './Loader';
 
 function Collection(props) {
 	const {slugs} = useParams()
-	const history = useHistory()
+	const history = useNavigate()
 	const {setSelectedBrands, selectedBrands, setSearch, brands} = useContext(MainContext)
 
 	const clearSelectedBrands = () => {
