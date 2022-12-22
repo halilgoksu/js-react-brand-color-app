@@ -6,6 +6,8 @@ const getContrastYIQ = (hexcolor) => {
 	return (yiq >= 128) ? 'black' : 'white';
 }
 
+// backgrounda gore textin degismesi olayini saglar 
+
 export {
 	getContrastYIQ
 }

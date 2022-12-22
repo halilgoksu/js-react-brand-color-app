@@ -35,9 +35,10 @@ function App() {
 	useEffect(() => {
 		setBrands(brandsArray.filter(brand => brand.title.toLowerCase().includes(search)))
 	}, [search])
+	//search e yazdigimiz zaman gelen datayi filterler, sadece eslesenler gorunur 
 
 	useEffect(() => {
-		document.title = 'React BrandColors Demo | PROTOTURK'
+		document.title = 'React BrandColors Demo'
 	}, [])
 
 	const data = {
@@ -53,6 +54,7 @@ function App() {
 		<>
 			<MainContext.Provider value={data}>
 				{copied && <Copied color={copied}/>}
+				{/* copie varsa yukle ve paramere olarak da copied gonder */}
 				<Sidebar />
 				<Router>
 					<Routes>

@@ -4,20 +4,12 @@ import MainContext from '../MainContext';
 
 function Search() {
 	const {search, setSearch} = useContext(MainContext)
-	//App.js deki useState elemanlari contextApi ile borudan burya gonderdik 
-
-	function Go(e){
-		const Lower =(e.target.value.toLowerCase());
-		setSearch(Lower);
-	}
-
 	return (
 		<div className="search">
 			<div className="icon">
-			 <GrSearch />
+				<GrSearch />
 			</div>
-			<input  type="text" onChange={Go}
-			 placeholder="Search Brands" />
+			<input type="text" onChange={} placeholder="Search Brands" />
 		</div>
 	)
 }
