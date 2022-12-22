@@ -17,6 +17,7 @@ function Sidebar() {
 					<a>Brand<b>Colors</b></a>
 				</div>
 				<div className="description">
+					The biggest collection of official brand color codes around. Curated by @brandcolors and friends.
 				</div>
 				<nav className="menu">
 					<ul>

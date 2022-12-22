@@ -31,7 +31,6 @@ function App() {
 			clearTimeout(timeout)
 		}
 	}, [copied])
-	console.log("hayde")
 
 	useEffect(() => {
 		setBrands(brandsArray.filter(brand => brand.title.toLowerCase().includes(search)))
