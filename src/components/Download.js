@@ -16,6 +16,7 @@ function Download() {
 			switch (cssMethod){
 
 				case 'css':
+			
 					output += ':root {\n'
 					selectedBrands.map(slug => {
 						let brand = brands.find(brand => brand.slug === slug)
@@ -55,6 +56,7 @@ function Download() {
 				URL.revokeObjectURL(url)
 				setDownloadUrl('')
 			}
+			console.log("2222");
 		}
 	}, [selectedBrands, cssMethod])
 

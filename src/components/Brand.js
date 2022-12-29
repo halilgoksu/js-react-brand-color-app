@@ -31,7 +31,7 @@ function Brand({brand}) {
 									{/* datadan cektigi kodlarin colorcode,
 									 kendi bakgroud a da gelen kodu sass ile verdik  
 									 her kod  farkli renk alidi  
-									 -getContrastYIQ texti bakgrounda gore ayarlar 
+									 -getContrastYIQ texti bakgrounda gore ayarlar import ettik 
 									 */}
 						{color}
 					</ClipboardButton>
